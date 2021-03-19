@@ -6,12 +6,12 @@
 #    By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/16 18:19:02 by gmarva            #+#    #+#              #
-#    Updated: 2021/03/16 18:19:39 by gmarva           ###   ########.fr        #
+#    Updated: 2021/03/19 15:45:24 by gmarva           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = phonebook
-FILES_CPP = megaphone.cpp
+FILES_CPP = phonebook.cpp contactsclass.cpp
 FILES_O = $(FILES_CPP:.cpp=.o)
 CLANG = clang++ -Wall -Wextra -Werror 
 
@@ -28,13 +28,13 @@ $(NAME): $(FILES_O)
 run: all
 
 test1:
-	./$(NAME) "shhhhh... I think the students are asleep..."
+	./$(NAME) 
 
 test2:
-	./$(NAME) Damnit " ! " "Sorry students, I thought this thing was off."
+	./$(NAME) ABC
 
 test3:
-	./$(NAME)
+	./$(NAME) 1 2 3
 
 clean:
 	@rm -rf $(FILES_O)
