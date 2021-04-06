@@ -6,26 +6,11 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/19 15:14:00 by gmarva            #+#    #+#             */
-/*   Updated: 2021/03/19 19:16:23 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/03/26 19:09:30 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "phonebook.hpp"
-
-// ContactsClass::ContactsClass()
-// {
-//     firstName = "";
-//     lastName = "";
-//     nickname = "";
-//     login = "";
-//     postalAddress = "";
-//     emailAdress = "";
-//     phoneNumber = "";
-//     birthdayDate = "";
-//     favoriteMeal = "";
-//     underwearColor = "";
-//     darkestSecret = "";
-// }
 
 void ContactsClass::addNewContact()
 {
@@ -72,9 +57,9 @@ void ContactsClass::printField(std::string field)
     len = field.size();
     if (len <= 10)
     {
-        for (int j = 0; j < (10 - len); j++)
-            std::cout << " ";
-        std::cout << field;
+        // for (int j = 0; j < (10 - len); j++)
+        //     std::cout << " ";
+        std::cout << std::setw(10) << std::right << field;
     }
     else
     {
@@ -90,7 +75,7 @@ void ContactsClass::displayContact()
     std::cout << "First Name\t\t" << firstName << std::endl;
     std::cout << "Last Name\t\t" << lastName << std::endl;
     std::cout << "Nickname\t\t" << nickname << std::endl;
-    std::cout << "Login\t\t" << login << std::endl;
+    std::cout << "Login\t\t\t" << login << std::endl;
     std::cout << "Postal Address\t\t" << postalAddress << std::endl;
     std::cout << "Email Adress\t\t" << emailAdress << std::endl;
     std::cout << "Phone Number\t\t" << phoneNumber << std::endl;

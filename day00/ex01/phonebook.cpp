@@ -6,7 +6,7 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/16 18:20:32 by gmarva            #+#    #+#             */
-/*   Updated: 2021/03/19 19:12:40 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/03/26 18:31:52 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,10 @@ int main()
             for (int k = 0; k < j; k++)
                 contacts[k].printContact(k);
             index = getIndexOfContact();
-            contacts[index - 1].displayContact();
+            if (index > j)
+                std::cout << "ERROR: contact is empty" << std::endl << std::endl;
+            else
+                contacts[index - 1].displayContact();
         }
         else if (command.find("EXIT", 0, 4) == 0)
             i = 1;

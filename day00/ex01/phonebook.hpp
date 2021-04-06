@@ -6,7 +6,7 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/16 18:20:37 by gmarva            #+#    #+#             */
-/*   Updated: 2021/03/19 19:16:14 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/03/26 19:02:18 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define PHONEBOOK_HPP
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 class ContactsClass
 {
@@ -30,7 +31,6 @@ private:
     std::string underwearColor;
     std::string darkestSecret;
 public:
-    //ContactsClass();
     void addNewContact();
     void printContact(int i);
     void printField(std::string field);
