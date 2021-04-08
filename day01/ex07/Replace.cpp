@@ -6,7 +6,7 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 00:23:21 by gmarva            #+#    #+#             */
-/*   Updated: 2021/04/07 15:45:51 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/04/08 19:44:04 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,11 @@ void Replace::doReplace(std::string filename, std::string firstString, std::stri
 {
     std::string newFileName;
 
+ 
+	for (int j = 0; filename[j] != '\0'; j++)
+	{
+		filename[j] = toupper(filename[j]);
+	}
     newFileName = filename + ".replace";
     if (this->fileValidation(filename) == 1)
     {

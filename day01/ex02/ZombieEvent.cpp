@@ -6,7 +6,7 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/28 19:02:58 by gmarva            #+#    #+#             */
-/*   Updated: 2021/03/29 16:55:22 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/04/08 19:07:25 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void ZombieEvent::setZombieType(std::string type)
 Zombie *ZombieEvent::newZombie(std :: string name)
 {
     Zombie *oneZombie = new Zombie(name, type);
-    return(oneZombie);
+    return (oneZombie);
 }
 
 void ZombieEvent::randomChump()

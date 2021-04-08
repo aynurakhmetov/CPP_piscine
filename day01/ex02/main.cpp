@@ -6,7 +6,7 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/28 19:02:52 by gmarva            #+#    #+#             */
-/*   Updated: 2021/03/29 16:56:04 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/04/08 19:00:38 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int main()
     std::string type;
     ZombieEvent newEvent;
     
-    for (int i = 0; i < 1;)
+    for (;;)
     {
         std::cout << "Хотите создать зомби (да / нет)?" << std::endl;
         std::getline(std::cin, answer);
@@ -32,10 +32,8 @@ int main()
         }
         else if (answer == "нет")
         {
-            i = 1;
+            break ;
         }
-        else
-            continue;
     }
     return (0);
 }

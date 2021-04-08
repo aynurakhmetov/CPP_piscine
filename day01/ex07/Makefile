@@ -1,4 +1,4 @@
-NAME = Replase
+NAME = replace
 FILES_CPP = Replace.cpp main.cpp
 FILES_O = $(FILES_CPP:.cpp=.o)
 CLANG = clang++ -Wall -Wextra -Werror
