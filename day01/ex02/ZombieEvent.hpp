@@ -6,7 +6,7 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/28 19:02:55 by gmarva            #+#    #+#             */
-/*   Updated: 2021/03/29 14:36:00 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/04/09 14:07:40 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@
 class ZombieEvent
 {
 private:
-    std::string type;
+    std::string _type;
 public:
     ZombieEvent();
     ~ZombieEvent();
     void setZombieType(std::string type);
-    Zombie *newZombie (std :: string name);
+    Zombie *newZombie (std::string name);
     void randomChump();
 };
 

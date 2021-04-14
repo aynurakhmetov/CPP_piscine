@@ -6,7 +6,7 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/29 17:01:07 by gmarva            #+#    #+#             */
-/*   Updated: 2021/04/08 19:08:01 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/04/09 15:50:01 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,26 +18,26 @@ Zombie::Zombie()
 
     std::string types[] = {"Красивые", "Растения", "Роботы", "Рыбы", "Мутанты"};
     numTypes = rand() % 5;
-    name = randomName();
-    type = types[numTypes];
-    std::cout << "Зомби <" << name << "(" << type << ")> создан" << std::endl;
+    this->_name = randomName();
+    this->_type = types[numTypes];
+    std::cout << "Зомби <" << this->_name << "(" << this->_type << ")> создан" << std::endl;
 }
  
 Zombie::Zombie(std::string name, std::string type)
 {
-    this->name = name;
-    this->type = type;
-    std::cout << "Зомби <" << name << "(" << type << ")> создан" << std::endl;
+    this->_name = name;
+    this->_type = type;
+    std::cout << "Зомби <" << this->_name << "(" << this->_type << ")> создан" << std::endl;
 }
 
 Zombie::~Zombie()
 {
-    std::cout << "Зомби <" << name << "(" << type << ")> убит" << std::endl;
+    std::cout << "Зомби <" << this->_name << "(" << this->_type << ")> убит" << std::endl;
 }
 
 void Zombie::announce()
 {
-    std::cout << "<" << name << "(" << type << ")> Мозгиииииии..." << std::endl;
+    std::cout << "<" << this->_name << "(" << this->_type << ")> Мозгиииииии..." << std::endl;
 }
 
 std::string Zombie::randomName()

@@ -6,7 +6,7 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/19 19:33:29 by gmarva            #+#    #+#             */
-/*   Updated: 2021/04/08 18:58:26 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/04/09 13:58:29 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,4 @@ int main()
 	return (0);
 }
 
-// clang++ -Wall -Wextra -Werror main.cpp Pony.cpp -o pony
+// clang++ -Wall -Wextra -Werror *.cpp -o pony

@@ -6,7 +6,7 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/28 19:03:01 by gmarva            #+#    #+#             */
-/*   Updated: 2021/03/29 16:00:31 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/04/09 14:05:21 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 class Zombie
 {
 private:
-    std::string name;
-    std::string type;
+    std::string _name;
+    std::string _type;
 public:
     Zombie();
     Zombie(std::string name, std::string type);

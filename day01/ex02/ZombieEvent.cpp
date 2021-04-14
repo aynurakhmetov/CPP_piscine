@@ -6,7 +6,7 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/28 19:02:58 by gmarva            #+#    #+#             */
-/*   Updated: 2021/04/08 19:07:25 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/04/09 14:08:19 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@ ZombieEvent::~ZombieEvent()
 
 void ZombieEvent::setZombieType(std::string type)
 {
-    this->type = type;
+    this->_type = type;
 }
 
-Zombie *ZombieEvent::newZombie(std :: string name)
+Zombie *ZombieEvent::newZombie(std::string name)
 {
-    Zombie *oneZombie = new Zombie(name, type);
+    Zombie *oneZombie = new Zombie(name, this->_type);
     return (oneZombie);
 }
 

@@ -1,33 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Pony.hpp                                           :+:      :+:    :+:   */
+/*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/19 19:33:23 by gmarva            #+#    #+#             */
-/*   Updated: 2021/04/09 13:56:24 by gmarva           ###   ########.fr       */
+/*   Created: 2021/04/09 18:07:53 by gmarva            #+#    #+#             */
+/*   Updated: 2021/04/11 23:42:56 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PONY_HPP
-#define PONY_HPP
-#include <iostream>
-#include <string>
+#ifndef FIXED_HPP
+# define FIXED_HPP
+# include <iostream>
 
-class MyLittlePony
+class Fixed
 {
-private:
-    std::string _name;
-    std::string _owner;
-    std::string _country;
-    int _age;
-    int _weight;
-    int _growth;
 public:
-    MyLittlePony(std::string name, std::string owner, std::string country, int age, int weight, int growth);
-    ~MyLittlePony();
-    void PonyDataPrint();
+    Fixed( void );
+    Fixed(const Fixed &);
+    Fixed &operator=(const Fixed &);
+    ~Fixed ( void );
+    int getRawBits (void) const;
+    void setRawBits (int const raw); 
+private:
+    int _pointValue;
+    static const int _kNumOfFractionalBits;
 };
 
 #endif

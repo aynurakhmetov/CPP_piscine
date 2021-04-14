@@ -6,7 +6,7 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/28 19:02:52 by gmarva            #+#    #+#             */
-/*   Updated: 2021/04/08 19:00:38 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/04/09 14:14:13 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,14 @@ int main()
     {
         std::cout << "Хотите создать зомби (да / нет)?" << std::endl;
         std::getline(std::cin, answer);
+        if (std::cin.eof())
+                break ;
         if (answer == "да")
         {
             std::cout << "Введите тип зомби?" << std::endl;
             std::getline(std::cin, type);
+            if (std::cin.eof())
+                break ;
             newEvent.setZombieType(type);
             newEvent.randomChump();
         }
@@ -38,4 +42,4 @@ int main()
     return (0);
 }
 
-// clang++ -Wall -Wextra -Werror main.cpp Zombie.cpp ZombieEvent.cpp -o zombie
+// clang++ -Wall -Wextra -Werror *.cpp -o zombie
