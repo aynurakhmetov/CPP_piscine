@@ -6,7 +6,7 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/12 12:47:39 by gmarva            #+#    #+#             */
-/*   Updated: 2021/04/14 18:24:42 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/05/07 17:57:31 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main()
 
     std::cout << "АТАКИ:" << std::endl;
     newFrag.rangedAttack("ЕДИНАЯ РОССИЯ");
-    newFrag.meleeAtack("РУССКИЙ РЭП");
+    newFrag.meleeAtack("ДВОРЕЦ В ГЕЛЕНДЖИКЕ");
     std::cout << std::endl;
 
     std::cout << "УРОН:" << std::endl;

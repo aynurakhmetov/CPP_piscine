@@ -6,7 +6,7 @@
 /*   By: gmarva <gmarva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/12 12:47:39 by gmarva            #+#    #+#             */
-/*   Updated: 2021/04/14 19:15:21 by gmarva           ###   ########.fr       */
+/*   Updated: 2021/04/21 15:31:08 by gmarva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,12 +49,12 @@ int main()
     std::cout << "=======================================" << std::endl << std::endl;
 
     std::cout << "НОВЫЙ РОБОТ:" << std::endl;
-    ScavTrap newScav("РОБОТ АЛЕКСЕЙ");
+    ScavTrap newScav("РОБОТ ЛЮБОВЬ");
     std::cout << std::endl;
 
     std::cout << "АТАКИ:" << std::endl;
-    newScav.rangedAttack("ЕДИНАЯ РОССИЯ");
-    newScav.meleeAtack("РУССКИЙ РЭП");
+    newScav.rangedAttack("ИК 2");
+    newScav.meleeAtack("ГД");
     std::cout << std::endl;
 
     std::cout << "УРОН:" << std::endl;
@@ -71,11 +71,11 @@ int main()
     std::cout << std::endl;
 
     std::cout << "ОХОТНИК ЗА УБЕЖИЩАМИ:" << std::endl;
-    newScav.challengeNewcomer("ПИКАЧУ");
-    newScav.challengeNewcomer("БУЛЬБАЗАВР");
-    newScav.challengeNewcomer("ПСАЙДАК");
-    newScav.challengeNewcomer("СЕЙЛАРМУН");
-    newScav.challengeNewcomer("СЕЙЛАРМЕРКУРИ");
+    newScav.challengeNewcomer("СЛАВА МЭРЛОУ");
+    newScav.challengeNewcomer("САША ГУДКОВ");
+    newScav.challengeNewcomer("ДАНЯ ПОПЕРЕЧНЫЙ");
+    newScav.challengeNewcomer("ИЛЬЯ ВАРЛМАОВ");
+    newScav.challengeNewcomer("ВИЛСАКОМ");
     std::cout << std::endl; 
     
     
